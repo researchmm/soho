@@ -2,15 +2,15 @@
 
 By Zhicheng Huang, Zhaoyang Zeng, Yupan Huang, Bei Liu, Dongmei Fu and Jianlong Fu
 
-#### Introduction
+### Introduction
 
 This is the official implementation of the paper.  In this paper,  we propose **SOHO** to "**S**ee **O**ut of t**H**e b**O**x" that takes a whole image as input, and learns vision-language representation in an end-to-end manner. SOHO does not require bounding box annotations which enables inference 10 times faster than region-based approaches. 
 
-#### Architecture
+### Architecture
 
 ![](resources/soho.png)
 
-#### Installation
+### Installation
 
 ```bash
 conda create -n soho python=3.7
@@ -20,7 +20,7 @@ cd soho
 bash tools/install.sh
 ```
 
-#### Getting Started
+### Getting Started
 
 1. Download the training, validation and test data
 
@@ -64,9 +64,9 @@ bash tools/install.sh
 
    
 
-#### Citing SOHO
+### Citing SOHO
 
-if you find this repo useful in your research, please consider citing:
+If you find this repo useful in your research, please consider citing the following papers:
 
 ```latex
 @article{huang2021seeing,
@@ -77,6 +77,6 @@ if you find this repo useful in your research, please consider citing:
 }
 ```
 
-####  Acknowledgements
+###  Acknowledgements
 
 We would like to thank [mmcv](https://github.com/open-mmlab/mmcv) and [mmdetection](https://github.com/open-mmlab/mmdetection). Our commons lib is based on mmcv. 
