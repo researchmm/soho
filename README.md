@@ -1,6 +1,6 @@
 # Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning [CVPR'21, Oral]
 
-By Zhicheng Huang, Zhaoyang Zeng, Yupan Huang, Bei Liu, Dongmei Fu and Jianlong Fu
+By Zhicheng Huang*, Zhaoyang Zeng*, Yupan Huang*, Bei Liu, Dongmei Fu and Jianlong Fu
 
 ## Introduction
 
@@ -69,11 +69,18 @@ bash tools/install.sh
 If you find this repo useful in your research, please consider citing the following papers:
 
 ```latex
-@article{huang2021seeing,
+@proceeding{huang2021seeing,
   title={Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning},
   author={Huang, Zhicheng and Zeng, Zhaoyang and Huang, Yupan and Liu, Bei and Fu, Dongmei and Fu, Jianlong},
   booktitle={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2021}
+}
+
+@article{huang2020pixel,
+  title={Pixel-bert: Aligning image pixels with text by deep multi-modal transformers},
+  author={Huang, Zhicheng and Zeng, Zhaoyang and Liu, Bei and Fu, Dongmei and Fu, Jianlong},
+  journal={arXiv preprint arXiv:2004.00849},
+  year={2020}
 }
 ```
 
