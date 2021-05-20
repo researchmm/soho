@@ -69,7 +69,7 @@ bash tools/install.sh
 If you find this repo useful in your research, please consider citing the following papers:
 
 ```latex
-@proceeding{huang2021seeing,
+@inproceedings{huang2021seeing,
   title={Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning},
   author={Huang, Zhicheng and Zeng, Zhaoyang and Huang, Yupan and Liu, Bei and Fu, Dongmei and Fu, Jianlong},
   booktitle={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
