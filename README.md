@@ -1,4 +1,4 @@
-## Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning
+# Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning
 
 By Zhicheng Huang, Zhaoyang Zeng, Yupan Huang, Bei Liu, Dongmei Fu and Jianlong Fu
 
