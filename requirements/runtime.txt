@@ -1,0 +1,19 @@
+matplotlib
+numpy
+# need older pillow until torchvision is fixed
+# Pillow<=6.2.2
+packaging
+six
+terminaltables
+sklearn
+tensorboard
+future
+addict
+regex
+tqdm
+yapf
+filelock
+tokenizers
+sentencepiece
+opencv-python 
+opencv-contrib-python
