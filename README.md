@@ -10,7 +10,7 @@ This is the official implementation of the paper.  In this paper,  we propose **
 
 ![](resources/soho.png)
 
-## Release progress
+## Release Progress
 
 - [x] VQA Codebase
 
