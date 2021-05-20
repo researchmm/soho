@@ -64,7 +64,7 @@ bash tools/install.sh
 
    
 
-### Citing SOHO
+### Citation
 
 If you find this repo useful in your research, please consider citing the following papers:
 
