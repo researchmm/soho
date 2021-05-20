@@ -10,6 +10,13 @@ This is the official implementation of the paper.  In this paper,  we propose **
 
 ![](resources/soho.png)
 
+## Release progress
+
+- [x] VQA Codebase
+
+- [ ] Pre-training Codebase
+- [ ] Other Downstream Tasks
+
 ## Installation
 
 ```bash
