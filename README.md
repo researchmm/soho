@@ -2,6 +2,8 @@
 
 By Zhicheng Huang*, Zhaoyang Zeng*, Yupan Huang*, Bei Liu, Dongmei Fu and Jianlong Fu
 
+arxiv: https://arxiv.org/pdf/2104.03135.pdf
+
 ## Introduction
 
 This is the official implementation of the paper.  In this paper,  we propose **SOHO** to "**S**ee **O**ut of t**H**e b**O**x" that takes a whole image as input, and learns vision-language representation in an end-to-end manner. SOHO does not require bounding box annotations which enables inference 10 times faster than region-based approaches. 
