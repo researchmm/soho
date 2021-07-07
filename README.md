@@ -36,7 +36,7 @@ bash tools/install.sh
    ```bash
    mkdir -p $SOHO_ROOT/data/coco
    cd $SOHO_ROOT/data/coco
-   # need to update
+   # download dataset
    wget http://images.cocodataset.org/zips/train2014.zip
    wget http://images.cocodataset.org/zips/val2014.zip
    wget http://images.cocodataset.org/zips/test2015.zip
@@ -54,7 +54,7 @@ bash tools/install.sh
    mkdir -p $SOHO_ROOT/pretrained
    cd $SOHO_ROOT/pretrained
    # the following need to update
-   wget 
+   
    ```
 
 3. Training a VQA model
