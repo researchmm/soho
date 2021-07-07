@@ -37,12 +37,12 @@ bash tools/install.sh
    mkdir -p $SOHO_ROOT/data/coco
    cd $SOHO_ROOT/data/coco
    # need to update
-   wget https://vqasc.blob.core.windows.net/t-zhihuawork/code_10/MultiScalePretrain/data/coco/train2014.zip
-   wget https://vqasc.blob.core.windows.net/t-zhihuawork/code_10/MultiScalePretrain/data/coco/val2014.zip
-   wget https://vqasc.blob.core.windows.net/t-zhihuawork/code_10/MultiScalePretrain/data/coco/test2015.zip
-   wget https://vqasc.blob.core.windows.net/t-zhihuawork/code_10/MultiScalePretrain/data/coco/train_data_qa_caption_new_box.json
-   wget https://vqasc.blob.core.windows.net/t-zhihuawork/code_10/MultiScalePretrain/data/coco/val_data_qa_caption_new_box.json
-   wget https://vqasc.blob.core.windows.net/t-zhihuawork/code_10/MultiScalePretrain/data/coco/test_data_qa.json
+   wget http://images.cocodataset.org/zips/train2014.zip
+   wget http://images.cocodataset.org/zips/val2014.zip
+   wget http://images.cocodataset.org/zips/test2015.zip
+   wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/vqa/train_data_vqa.json
+   wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/vqa/val_data_vqa.json
+   wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/vqa/test_data_vqa.json
    ```
 
    

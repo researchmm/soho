@@ -1,9 +1,6 @@
 import os
 
-"""
-86.07 47.15 58.5 68.57/17
-86.09 47.77 58.52 68.66/18
-"""
+
 
 fp_16=dict(
     enable=True,
@@ -74,7 +71,7 @@ data = dict(
             data_root=data_root,
             max_length=16,
             sentence_group=1,
-            ann_file='train_data_qa_caption_new_box.json',
+            ann_file='train_data_vqa.json',
             img_prefix=data_root + 'train2014/',
             pipeline=train_pipeline),
         dict(
@@ -82,7 +79,7 @@ data = dict(
             data_root=data_root,
             max_length=16,
             sentence_group=1,
-            ann_file='val_data_qa_caption_new_box.json',
+            ann_file='val_data_vqa.json',
             img_prefix=data_root + 'val2014/',
             pipeline=train_pipeline),
     ],
@@ -91,7 +88,7 @@ data = dict(
         data_root=data_root,
         max_length=16,
         sentence_group=1,
-        ann_file='test_data_qa.json',
+        ann_file='test_data_vqa.json',
         img_prefix=data_root + 'test2015/',
         pipeline=test_pipeline,
         test_mode=True,

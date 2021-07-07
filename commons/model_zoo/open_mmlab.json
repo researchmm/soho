@@ -39,6 +39,6 @@
   "mmedit/vgg16": "https://openmmlab.oss-accelerate.aliyuncs.com/mmediting/third_party/vgg_state_dict.pth",
   "mmedit/res34_en_nomixup": "https://openmmlab.oss-accelerate.aliyuncs.com/mmediting/third_party/model_best_resnet34_En_nomixup.pth",
   "mmedit/mobilenet_v2": "https://openmmlab.oss-accelerate.aliyuncs.com/mmediting/third_party/mobilenet_v2.pth",
-  "bert-base-uncased": "https://vqasc.blob.core.windows.net/t-zhihuawork/bert_weight/bert-base-uncased.pth",
+  "bert-base-uncased": "https://itpseasiadata.blob.core.windows.net/t-zhihua/bert_weight/bert-base-uncased.pth",
   "LaBSE-base-cased": "https://vqasc.blob.core.windows.net/t-zhihuawork/LaBSE_sentence_emb_model/LaBSE.pth"
 }
