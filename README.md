@@ -16,7 +16,7 @@ This is the official implementation of the paper.  In this paper,  we propose **
 
 - [x] VQA Codebase
 
-- [ ] Pre-training Codebase
+- [x] Pre-training Codebase
 - [ ] Other Downstream Tasks
 
 ## Installation
@@ -34,9 +34,18 @@ bash tools/install.sh
 1. Download the training, validation and test data
 
    ```bash
+   # download Pre-traning dataset
+   mkdir -p $SOHO_ROOT/data/vg_coco_pre
+   cd $SOHO_ROOT/data/vg_coco_pre
+   wget http://images.cocodataset.org/zips/train2014.zip
+   wget http://images.cocodataset.org/zips/val2014.zip
+   wget https://itpseasiadata.blob.core.windows.net/t-zhihua/dataset/images.zip
+   wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/pretraining/coco_cap_train_pre.json
+   wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/pretraining/coco_cap_val_pre.json
+   wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/pretraining/vg_cap_pre.json
    mkdir -p $SOHO_ROOT/data/coco
    cd $SOHO_ROOT/data/coco
-   # download dataset
+   # download VQA dataset
    wget http://images.cocodataset.org/zips/train2014.zip
    wget http://images.cocodataset.org/zips/val2014.zip
    wget http://images.cocodataset.org/zips/test2015.zip
@@ -47,30 +56,35 @@ bash tools/install.sh
 
    
 
-2. Download the Pre-training models
+2. Train the Pre-training models
 
    ```bash
    cd $SOHO_ROOT
-   mkdir -p $SOHO_ROOT/pretrained
-   cd $SOHO_ROOT/pretrained
-   # the following need to update
+   # use 8 GPUS to train the model
+   bash tools/dist_train.sh configs/Pretrain/soho_res18_pre.py 8
    
+   # you also can download the pre-trained models 
+   mkdir -p $SOHO_ROOT/work_dirs/pretrained
+   cd $SOHO_ROOT/work_dirs/pretrained
+   # download pre-training weight
+   wget https://sohose.s3.ap-southeast-1.amazonaws.com/checkpoint/soho_res18_fp16_40-9441cdd3.pth
    ```
 
 3. Training a VQA model
 
    ```bash
    cd $SOHO_ROOT
-   #use 8 GPUS to train the model
+   # use 8 GPUS to train the model
    bash tools/dist_train.sh configs/VQA/soho_res18_vqa.py 8
    ```
 
 4. Evaluate a VQA model
 
    ```bash
+   # test 18 epoch with 8GPUs
    bash tools/dist_test_vqa.sh configs/VQA/soho_res18_vqa.py 18 8
    ```
-
+   
    
 
 ## Citation
