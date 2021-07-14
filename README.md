@@ -49,6 +49,7 @@ bash tools/install.sh
    cd VG_100K
    zip -r images.zip .
    mv images.zip ../
+   cd ..
    rm -rf VG_100K*
    wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/pretraining/coco_cap_train_pre.json
    wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/pretraining/coco_cap_val_pre.json
