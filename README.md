@@ -39,7 +39,17 @@ bash tools/install.sh
    cd $SOHO_ROOT/data/vg_coco_pre
    wget http://images.cocodataset.org/zips/train2014.zip
    wget http://images.cocodataset.org/zips/val2014.zip
-   wget https://itpseasiadata.blob.core.windows.net/t-zhihua/dataset/images.zip
+   #download vg dataset
+   wget https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip
+   wget https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip
+   unzip images.zip
+   unzip images2.zip
+   rm -rf images.zip images2.zip
+   mv VG_100K_2/*.jpg VG_100K/
+   cd VG_100K
+   zip -r images.zip .
+   mv images.zip ../
+   rm -rf VG_100K*
    wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/pretraining/coco_cap_train_pre.json
    wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/pretraining/coco_cap_val_pre.json
    wget https://sohose.s3.ap-southeast-1.amazonaws.com/data/pretraining/vg_cap_pre.json
