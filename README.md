@@ -24,9 +24,14 @@ This is the official implementation of the paper.  In this paper,  we propose **
 ```bash
 conda create -n soho python=3.7
 conda activate soho
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge 
+git clone https://github.com/NVIDIA/apex.git
+cd apex
+python setup.py install --cuda_ext --cpp_ext
+cd ../ && rm -rf apex
 git clone https://github.com/researchmm/soho.git
-cd soho
-bash tools/install.sh
+cd $SOHO_ROOT
+python setup.py develop
 ```
 
 ## Getting Started
