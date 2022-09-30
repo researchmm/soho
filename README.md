@@ -17,7 +17,6 @@ This is the official implementation of the paper.  In this paper,  we propose **
 - [x] VQA Codebase
 
 - [x] Pre-training Codebase
-- [ ] Other Downstream Tasks
 
 ## Installation
 
